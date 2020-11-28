@@ -6,8 +6,7 @@ import (
 	"os"
 )
 
-func CreateFile() {
-	fileName := "test.txt"
+func CreateFile(fileName string) {
 	newFile, err := os.Create(fileName)
 	errorhandling.ReportError(err)
 

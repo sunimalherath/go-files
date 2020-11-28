@@ -3,5 +3,7 @@ package main
 import "github.com/files/filebasics"
 
 func main() {
-	filebasics.CreateFile()
+	fileName := "test.txt"
+	filebasics.CreateFile(fileName)
+	filebasics.TruncateFile(fileName)
 }
