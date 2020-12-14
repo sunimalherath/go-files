@@ -1,8 +1,9 @@
 package filebasics
 
 import (
-	"github.com/files/errorhandling"
 	"os"
+
+	"github.com/sunimalherath/go-files/errorhandling"
 )
 
 func TruncateFile(fileName string) {

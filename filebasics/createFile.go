@@ -2,8 +2,10 @@ package filebasics
 
 import (
 	"fmt"
-	"github.com/files/errorhandling"
+
 	"os"
+
+	"github.com/sunimalherath/go-files/errorhandling"
 )
 
 func CreateFile(fileName string) {
