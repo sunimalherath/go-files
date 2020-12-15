@@ -11,5 +11,9 @@ func main() {
 	// filebasics.TruncateFile(fileName)
 
 	// Get the file info
-	filebasics.GetFileInfo(fileName)
+	//filebasics.GetFileInfo(fileName)
+
+	// Rename | Move file
+	newName := "test2.txt"
+	filebasics.RenameFile(fileName, newName)
 }
