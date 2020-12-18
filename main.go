@@ -3,7 +3,7 @@ package main
 import "github.com/sunimalherath/go-files/filebasics"
 
 func main() {
-	fileName := "test.txt"
+	//fileName := "test.txt"
 	// Create file
 	// filebasics.CreateFile(fileName)
 
@@ -14,6 +14,10 @@ func main() {
 	//filebasics.GetFileInfo(fileName)
 
 	// Rename | Move file
-	newName := "test2.txt"
-	filebasics.RenameFile(fileName, newName)
+	//newName := "test2.txt"
+	//filebasics.RenameFile(fileName, newName)
+
+	// Delete a file
+	fileToDelete := "test2.txt"
+	filebasics.DeleteFile(fileToDelete)
 }
