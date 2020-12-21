@@ -1,11 +1,14 @@
 package main
 
-import "github.com/sunimalherath/go-files/filebasics"
+import (
+	filebasics2 "github.com/sunimalherath/go-files/filebasics"
+	"github.com/sunimalherath/go-files/filebasics"
+)
 
 func main() {
-	//fileName := "test.txt"
+	fileName := "test.txt"
 	// Create file
-	// filebasics.CreateFile(fileName)
+	filebasics.CreateFile(fileName)
 
 	// Truncate the file
 	// filebasics.TruncateFile(fileName)
@@ -18,6 +21,9 @@ func main() {
 	//filebasics.RenameFile(fileName, newName)
 
 	// Delete a file
-	fileToDelete := "test2.txt"
-	filebasics.DeleteFile(fileToDelete)
+	//fileToDelete := "test2.txt"
+	//filebasics.DeleteFile(fileToDelete)
+
+	// Open and Close file with os.Open() and os.OpenFile()
+	filebasics2.OpenAndCloseFile(fileName)
 }
