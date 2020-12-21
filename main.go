@@ -34,5 +34,14 @@ func main() {
 	//filebasics.CheckFileExistance(fileName2)
 
 	// Check file's read & write permissions
-	filebasics.CheckFileRWPermission(fileName)
+	//filebasics.CheckFileRWPermission(fileName)
+
+	// Change file permissions
+	filebasics.ChangePermission(fileName)
+
+	// Change file ownership
+	filebasics.ChangeOwnership(fileName)
+
+	// Change file timestamp
+	filebasics.ChangeTimestamp(fileName)
 }

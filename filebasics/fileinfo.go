@@ -14,4 +14,5 @@ func GetFileInfo(fileName string) {
 	fmt.Println(fileInfo.Name())
 	fmt.Println(fileInfo.Size())
 	fmt.Println(fileInfo.Mode())
+	fmt.Println(fileInfo.ModTime())
 }
