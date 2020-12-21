@@ -27,9 +27,12 @@ func main() {
 	//filebasics2.OpenAndCloseFile(fileName)
 
 	// If file found
-	filebasics.CheckFileExistance(fileName)
+	//filebasics.CheckFileExistance(fileName)
 
 	// If file not found
-	fileName2 := "test2.txt"
-	filebasics.CheckFileExistance(fileName2)
+	//fileName2 := "test2.txt"
+	//filebasics.CheckFileExistance(fileName2)
+
+	// Check file's read & write permissions
+	filebasics.CheckFileRWPermission(fileName)
 }

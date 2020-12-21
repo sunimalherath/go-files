@@ -17,4 +17,11 @@ func OpenAndCloseFile(fileName string) {
 	errorhandling.ReportError(err2)
 	GetFileInfo(file2.Name())
 	file2.Close()
+
+	//	os.O_RDONLY		=> READ ONLY
+	//	os.O_WRONLY		=> WRITE ONLY
+	//	os.O_RDWR		=> READ WRITE
+	//	os.O_APPEND		=> APPEND TO END OF THE FILE
+	//	os.O_CREATE		=> CREATE IF DON'T EXIST
+	//	os.O_TRUNC		=> TRUNCATE WHEN OPENING THE FILE
 }
