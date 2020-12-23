@@ -37,11 +37,15 @@ func main() {
 	//filebasics.CheckFileRWPermission(fileName)
 
 	// Change file permissions
-	filebasics.ChangePermission(fileName)
+	//filebasics.ChangePermission(fileName)
 
 	// Change file ownership
-	filebasics.ChangeOwnership(fileName)
+	//filebasics.ChangeOwnership(fileName)
 
 	// Change file timestamp
-	filebasics.ChangeTimestamp(fileName)
+	//filebasics.ChangeTimestamp(fileName)
+
+	// Copy contents from the file to a new file
+	newFile := "newText.txt"
+	filebasics.CopyFile(fileName, newFile)
 }
